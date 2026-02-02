@@ -10,6 +10,15 @@ int sum(int n) {
   return total;
 }
 
+//function for the product
+int prod(int n){
+  int result = 1;
+  for (int i = 2; i <= n; i++) {
+    result += i;
+  }
+  return result;
+}
+
 int main () {
 
   int n;
@@ -17,8 +26,10 @@ int main () {
   cout<< "Enter a number: ";
  cin>> n;
 
- int result = sum(n);
-   cout<< "The sum from 1 to " << n << " is " << result << endl;
+ int s = sum(n);
+ int p = prod(n);
+   cout<< "The sum is: "<< s << endl;
+ cout<< "The product is: "<< p << endl;
  
   return 0;
 }
