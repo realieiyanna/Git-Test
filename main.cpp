@@ -1,8 +1,24 @@
 #include <iostream>
 using namespace std;
 
+//function that calls n and adds to make the sum
+int sum(int n) {
+  int total =0;
+  for (int i = 1; i <=  n; i++) {
+    total += i;
+      }
+  return total;
+}
+
 int main () {
 
-  cout<< "Hello World!" <<endl;
+  int n;
+
+  cout<< "Enter a number: ";
+ cin>> n;
+
+ int result = sum(n);
+   cout<< "The sum from 1 to " << n << " is " << result << endl;
+ 
   return 0;
 }
